@@ -19,7 +19,7 @@ Navigate to Category "Science and Technology"
         Exit For Loop If    "${dynamic_categ_name}" == "${Expected_category}"
     END
     Set Test Variable  ${static_categ_name}  xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a
-    Log to Console  Step2
+    Log to Console  Step 2
 
 Click on "Astronomy" Sub Section
     Mouse Over  ${static_categ_name}
@@ -30,7 +30,7 @@ Click on "Astronomy" Sub Section
     Click Element   ${Astronomy}
     sleep   2s
     Verify WebPage title  ${Expected_Book_category}
-    Log to Console  Step3
+    Log to Console  Step 3
 
 Search for the book title 'Relativity: The Special and General Theory' in the Booklist
     ${bok_list} =  Get Element Count    xpath=//div[@class='col-md-9']/div
@@ -40,7 +40,7 @@ Search for the book title 'Relativity: The Special and General Theory' in the Bo
     END
     Set Test Variable  ${exact_bok_elem}  xpath=//div[@class='col-md-9']/div[${j}]/a/div[3]
 
-    Log to Console  Step4
+    Log to Console  Step 4
 
 Go to Expected Book details Page
     sleep  4s
@@ -49,23 +49,23 @@ Go to Expected Book details Page
 
 Verify User navigated to the expected book details
     Verify WebPage title  ${Expected_Book_Detailed_Name}
-    Log to Console  Step6
+    Log to Console  Step 6
 
 Click on @Flipkart to buy the book
     sleep  2s
     Click Element  ${Flipkart_elem}
     sleep  2s
-    Log to Console  Step7
+    Log to Console  Step 7
 
 Click on the Book
     Select Window  NEW
     Click Element  ${Book}
-    Log to Console  Step8
+    Log to Console  Step 8
 
 Add to cart
     Select Window  NEW
     Click Element  ${Cart}
-    Log to Console  Step9
+    Log to Console  Step 9
 
 Verify WebPage title
     [Arguments]  ${title_name}
