@@ -58,12 +58,12 @@ Click on @Flipkart to buy the book
     Log to Console  Step 7
 
 Click on the Book
-    Select Window  NEW
+    Switch Window  NEW
     Click Element  ${Book}
     Log to Console  Step 8
 
 Add to cart
-    Select Window  NEW
+    Switch Window  NEW
     Click Element  ${Cart}
     Log to Console  Step 9
 
