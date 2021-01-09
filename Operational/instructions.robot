@@ -60,11 +60,14 @@ Click on @Flipkart to buy the book
 Click on the Book
     Switch Window  NEW
     Click Element  ${Book}
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/flipkartPage.png 
     Log to Console  Step 8
 
 Add to cart
     Switch Window  NEW
     Click Element  ${Cart}
+    sleep  4s
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/addToCart.png
     Log to Console  Step 9
 
 Verify WebPage title
