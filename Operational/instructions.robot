@@ -19,6 +19,7 @@ Navigate to Category "Science and Technology"
         Exit For Loop If    "${dynamic_categ_name}" == "${Expected_category}"
     END
     Set Test Variable  ${static_categ_name}  xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/categoryPage.png
     Log to Console  Step 2
 
 Click on "Astronomy" Sub Section
@@ -39,7 +40,7 @@ Search for the book title 'Relativity: The Special and General Theory' in the Bo
         Exit For Loop If  "${bok_names}" == "${Expected_Book_Name}"
     END
     Set Test Variable  ${exact_bok_elem}  xpath=//div[@class='col-md-9']/div[${j}]/a/div[3]
-
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/bookPage.png
     Log to Console  Step 4
 
 Go to Expected Book details Page
