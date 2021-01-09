@@ -14,5 +14,3 @@ User should be able to land on Book details Page
     Click on @Flipkart to buy the book
     Click on the Book 
     Add to cart
-
-
