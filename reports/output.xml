@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210109 19:18:48.284" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210109 20:24:15.910" rpa="false">
 <suite id="s1" name="TestsBook" source="D:\VS_Code_Moolya\RobotFramework\TestsBook">
 <suite id="s1-s1" name="TestCases" source="D:\VS_Code_Moolya\RobotFramework\TestsBook\TestCases.robot">
 <test id="s1-s1-t1" name="User should be able to land on Book details Page">
@@ -10,32 +10,32 @@
 <arg>${url_books}</arg>
 <arg>${brows}</arg>
 </arguments>
-<msg timestamp="20210109 19:18:48.937" level="INFO">Opening browser 'gc' to base url 'https://www.indiabookstore.net/'.</msg>
-<status status="PASS" starttime="20210109 19:18:48.937" endtime="20210109 19:19:02.859"></status>
+<msg timestamp="20210109 20:24:16.407" level="INFO">Opening browser 'gc' to base url 'https://www.indiabookstore.net/'.</msg>
+<status status="PASS" starttime="20210109 20:24:16.403" endtime="20210109 20:24:38.786"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210109 19:19:02.859" endtime="20210109 19:19:05.063"></status>
+<status status="PASS" starttime="20210109 20:24:38.786" endtime="20210109 20:24:40.956"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:08.070" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:05.063" endtime="20210109 19:19:08.070"></status>
+<msg timestamp="20210109 20:24:43.969" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210109 20:24:40.956" endtime="20210109 20:24:43.969"></status>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <doc>Executes the given JavaScript code with possible arguments.</doc>
 <arguments>
 <arg>window.scrollTo(0, 600)</arg>
 </arguments>
-<msg timestamp="20210109 19:19:08.070" level="INFO">Executing JavaScript:
+<msg timestamp="20210109 20:24:43.969" level="INFO">Executing JavaScript:
 window.scrollTo(0, 600)
 Without any arguments.</msg>
-<status status="PASS" starttime="20210109 19:19:08.070" endtime="20210109 19:19:08.092"></status>
+<status status="PASS" starttime="20210109 20:24:43.969" endtime="20210109 20:24:43.994"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:18:48.937" endtime="20210109 19:19:08.092"></status>
+<status status="PASS" starttime="20210109 20:24:16.403" endtime="20210109 20:24:43.994"></status>
 </kw>
 <kw name="Navigate to Category &quot;Science and Technology&quot;" library="instructions">
 <kw name="Get Element Count" library="SeleniumLibrary">
@@ -46,16 +46,16 @@ Without any arguments.</msg>
 <assign>
 <var>${category_count}</var>
 </assign>
-<msg timestamp="20210109 19:19:08.152" level="INFO">${category_count} = 21</msg>
-<status status="PASS" starttime="20210109 19:19:08.096" endtime="20210109 19:19:08.152"></status>
+<msg timestamp="20210109 20:24:44.065" level="INFO">${category_count} = 21</msg>
+<status status="PASS" starttime="20210109 20:24:44.000" endtime="20210109 20:24:44.065"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:11.167" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:08.156" endtime="20210109 19:19:11.167"></status>
+<msg timestamp="20210109 20:24:47.066" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210109 20:24:44.065" endtime="20210109 20:24:47.066"></status>
 </kw>
 <kw name="${i} IN RANGE [ 1 | ${category_count} ]" type="for">
 <kw name="${i} = 1" type="foritem">
@@ -67,31 +67,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:11.245" level="INFO">${dynamic_categ_name} = Academic</msg>
-<status status="PASS" starttime="20210109 19:19:11.167" endtime="20210109 19:19:11.245"></status>
+<msg timestamp="20210109 20:24:47.144" level="INFO">${dynamic_categ_name} = Academic</msg>
+<status status="PASS" starttime="20210109 20:24:47.066" endtime="20210109 20:24:47.144"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.245" endtime="20210109 19:19:11.563"></status>
+<status status="PASS" starttime="20210109 20:24:47.144" endtime="20210109 20:24:47.451"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.571" endtime="20210109 19:19:11.571"></status>
+<status status="PASS" starttime="20210109 20:24:47.451" endtime="20210109 20:24:47.451"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.573" endtime="20210109 19:19:11.573"></status>
+<status status="PASS" starttime="20210109 20:24:47.458" endtime="20210109 20:24:47.458"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:11.167" endtime="20210109 19:19:11.573"></status>
+<status status="PASS" starttime="20210109 20:24:47.066" endtime="20210109 20:24:47.458"></status>
 </kw>
 <kw name="${i} = 2" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -102,31 +102,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:11.651" level="INFO">${dynamic_categ_name} = Action &amp; Adventure</msg>
-<status status="PASS" starttime="20210109 19:19:11.573" endtime="20210109 19:19:11.651"></status>
+<msg timestamp="20210109 20:24:47.542" level="INFO">${dynamic_categ_name} = Action &amp; Adventure</msg>
+<status status="PASS" starttime="20210109 20:24:47.458" endtime="20210109 20:24:47.542"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.651" endtime="20210109 19:19:11.939"></status>
+<status status="PASS" starttime="20210109 20:24:47.542" endtime="20210109 20:24:47.839"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.939" endtime="20210109 19:19:11.939"></status>
+<status status="PASS" starttime="20210109 20:24:47.839" endtime="20210109 20:24:47.839"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.939" endtime="20210109 19:19:11.948"></status>
+<status status="PASS" starttime="20210109 20:24:47.845" endtime="20210109 20:24:47.845"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:11.573" endtime="20210109 19:19:11.948"></status>
+<status status="PASS" starttime="20210109 20:24:47.458" endtime="20210109 20:24:47.845"></status>
 </kw>
 <kw name="${i} = 3" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -137,31 +137,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:11.972" level="INFO">${dynamic_categ_name} = Biographies &amp; True Accounts</msg>
-<status status="PASS" starttime="20210109 19:19:11.948" endtime="20210109 19:19:11.972"></status>
+<msg timestamp="20210109 20:24:47.924" level="INFO">${dynamic_categ_name} = Biographies &amp; True Accounts</msg>
+<status status="PASS" starttime="20210109 20:24:47.845" endtime="20210109 20:24:47.924"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:11.972" endtime="20210109 19:19:12.254"></status>
+<status status="PASS" starttime="20210109 20:24:47.924" endtime="20210109 20:24:48.260"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.254" endtime="20210109 19:19:12.254"></status>
+<status status="PASS" starttime="20210109 20:24:48.260" endtime="20210109 20:24:48.260"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.260" endtime="20210109 19:19:12.260"></status>
+<status status="PASS" starttime="20210109 20:24:48.267" endtime="20210109 20:24:48.267"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:11.948" endtime="20210109 19:19:12.260"></status>
+<status status="PASS" starttime="20210109 20:24:47.845" endtime="20210109 20:24:48.267"></status>
 </kw>
 <kw name="${i} = 4" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -172,31 +172,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:12.336" level="INFO">${dynamic_categ_name} = Business, Investing and Management</msg>
-<status status="PASS" starttime="20210109 19:19:12.260" endtime="20210109 19:19:12.336"></status>
+<msg timestamp="20210109 20:24:48.345" level="INFO">${dynamic_categ_name} = Business, Investing and Management</msg>
+<status status="PASS" starttime="20210109 20:24:48.267" endtime="20210109 20:24:48.345"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.336" endtime="20210109 19:19:12.633"></status>
+<status status="PASS" starttime="20210109 20:24:48.345" endtime="20210109 20:24:48.639"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.633" endtime="20210109 19:19:12.633"></status>
+<status status="PASS" starttime="20210109 20:24:48.639" endtime="20210109 20:24:48.639"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.639" endtime="20210109 19:19:12.639"></status>
+<status status="PASS" starttime="20210109 20:24:48.645" endtime="20210109 20:24:48.645"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:12.260" endtime="20210109 19:19:12.639"></status>
+<status status="PASS" starttime="20210109 20:24:48.267" endtime="20210109 20:24:48.645"></status>
 </kw>
 <kw name="${i} = 5" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -207,31 +207,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:12.703" level="INFO">${dynamic_categ_name} = Children's Books</msg>
-<status status="PASS" starttime="20210109 19:19:12.639" endtime="20210109 19:19:12.703"></status>
+<msg timestamp="20210109 20:24:48.723" level="INFO">${dynamic_categ_name} = Children's Books</msg>
+<status status="PASS" starttime="20210109 20:24:48.645" endtime="20210109 20:24:48.723"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.703" endtime="20210109 19:19:12.986"></status>
+<status status="PASS" starttime="20210109 20:24:48.723" endtime="20210109 20:24:49.039"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.986" endtime="20210109 19:19:12.986"></status>
+<status status="PASS" starttime="20210109 20:24:49.039" endtime="20210109 20:24:49.039"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:12.992" endtime="20210109 19:19:12.992"></status>
+<status status="PASS" starttime="20210109 20:24:49.046" endtime="20210109 20:24:49.046"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:12.639" endtime="20210109 19:19:12.992"></status>
+<status status="PASS" starttime="20210109 20:24:48.645" endtime="20210109 20:24:49.046"></status>
 </kw>
 <kw name="${i} = 6" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -242,31 +242,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:13.077" level="INFO">${dynamic_categ_name} = Comics &amp; Manga</msg>
-<status status="PASS" starttime="20210109 19:19:12.992" endtime="20210109 19:19:13.077"></status>
+<msg timestamp="20210109 20:24:49.137" level="INFO">${dynamic_categ_name} = Comics &amp; Manga</msg>
+<status status="PASS" starttime="20210109 20:24:49.046" endtime="20210109 20:24:49.137"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.077" endtime="20210109 19:19:13.396"></status>
+<status status="PASS" starttime="20210109 20:24:49.137" endtime="20210109 20:24:49.445"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.396" endtime="20210109 19:19:13.396"></status>
+<status status="PASS" starttime="20210109 20:24:49.445" endtime="20210109 20:24:49.445"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.403" endtime="20210109 19:19:13.403"></status>
+<status status="PASS" starttime="20210109 20:24:49.451" endtime="20210109 20:24:49.451"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:12.992" endtime="20210109 19:19:13.403"></status>
+<status status="PASS" starttime="20210109 20:24:49.046" endtime="20210109 20:24:49.451"></status>
 </kw>
 <kw name="${i} = 7" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -277,31 +277,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:13.482" level="INFO">${dynamic_categ_name} = Computing &amp; Internet</msg>
-<status status="PASS" starttime="20210109 19:19:13.403" endtime="20210109 19:19:13.482"></status>
+<msg timestamp="20210109 20:24:49.538" level="INFO">${dynamic_categ_name} = Computing &amp; Internet</msg>
+<status status="PASS" starttime="20210109 20:24:49.451" endtime="20210109 20:24:49.538"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.482" endtime="20210109 19:19:13.775"></status>
+<status status="PASS" starttime="20210109 20:24:49.538" endtime="20210109 20:24:49.856"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.775" endtime="20210109 19:19:13.775"></status>
+<status status="PASS" starttime="20210109 20:24:49.856" endtime="20210109 20:24:49.856"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.781" endtime="20210109 19:19:13.781"></status>
+<status status="PASS" starttime="20210109 20:24:49.862" endtime="20210109 20:24:49.862"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:13.403" endtime="20210109 19:19:13.781"></status>
+<status status="PASS" starttime="20210109 20:24:49.451" endtime="20210109 20:24:49.862"></status>
 </kw>
 <kw name="${i} = 8" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -312,31 +312,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:13.857" level="INFO">${dynamic_categ_name} = Crime, Thriller &amp; Mystery</msg>
-<status status="PASS" starttime="20210109 19:19:13.781" endtime="20210109 19:19:13.857"></status>
+<msg timestamp="20210109 20:24:49.941" level="INFO">${dynamic_categ_name} = Crime, Thriller &amp; Mystery</msg>
+<status status="PASS" starttime="20210109 20:24:49.862" endtime="20210109 20:24:49.941"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:13.857" endtime="20210109 19:19:14.150"></status>
+<status status="PASS" starttime="20210109 20:24:49.941" endtime="20210109 20:24:50.265"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.150" endtime="20210109 19:19:14.150"></status>
+<status status="PASS" starttime="20210109 20:24:50.265" endtime="20210109 20:24:50.265"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.157" endtime="20210109 19:19:14.157"></status>
+<status status="PASS" starttime="20210109 20:24:50.272" endtime="20210109 20:24:50.272"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:13.781" endtime="20210109 19:19:14.157"></status>
+<status status="PASS" starttime="20210109 20:24:49.862" endtime="20210109 20:24:50.272"></status>
 </kw>
 <kw name="${i} = 9" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -347,31 +347,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:14.225" level="INFO">${dynamic_categ_name} = Entrance Exams Preparation</msg>
-<status status="PASS" starttime="20210109 19:19:14.157" endtime="20210109 19:19:14.225"></status>
+<msg timestamp="20210109 20:24:50.344" level="INFO">${dynamic_categ_name} = Entrance Exams Preparation</msg>
+<status status="PASS" starttime="20210109 20:24:50.272" endtime="20210109 20:24:50.344"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.225" endtime="20210109 19:19:14.510"></status>
+<status status="PASS" starttime="20210109 20:24:50.344" endtime="20210109 20:24:50.632"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.510" endtime="20210109 19:19:14.510"></status>
+<status status="PASS" starttime="20210109 20:24:50.632" endtime="20210109 20:24:50.632"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.518" endtime="20210109 19:19:14.518"></status>
+<status status="PASS" starttime="20210109 20:24:50.638" endtime="20210109 20:24:50.638"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:14.157" endtime="20210109 19:19:14.522"></status>
+<status status="PASS" starttime="20210109 20:24:50.272" endtime="20210109 20:24:50.638"></status>
 </kw>
 <kw name="${i} = 10" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -382,31 +382,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:14.579" level="INFO">${dynamic_categ_name} = Fantasy &amp; Science Fiction</msg>
-<status status="PASS" starttime="20210109 19:19:14.522" endtime="20210109 19:19:14.579"></status>
+<msg timestamp="20210109 20:24:50.708" level="INFO">${dynamic_categ_name} = Fantasy &amp; Science Fiction</msg>
+<status status="PASS" starttime="20210109 20:24:50.638" endtime="20210109 20:24:50.708"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.579" endtime="20210109 19:19:14.866"></status>
+<status status="PASS" starttime="20210109 20:24:50.708" endtime="20210109 20:24:51.009"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.866" endtime="20210109 19:19:14.866"></status>
+<status status="PASS" starttime="20210109 20:24:51.009" endtime="20210109 20:24:51.009"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.872" endtime="20210109 19:19:14.872"></status>
+<status status="PASS" starttime="20210109 20:24:51.016" endtime="20210109 20:24:51.016"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:14.522" endtime="20210109 19:19:14.872"></status>
+<status status="PASS" starttime="20210109 20:24:50.638" endtime="20210109 20:24:51.016"></status>
 </kw>
 <kw name="${i} = 11" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -417,31 +417,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:14.956" level="INFO">${dynamic_categ_name} = Health &amp; Personal Development</msg>
-<status status="PASS" starttime="20210109 19:19:14.872" endtime="20210109 19:19:14.956"></status>
+<msg timestamp="20210109 20:24:51.094" level="INFO">${dynamic_categ_name} = Health &amp; Personal Development</msg>
+<status status="PASS" starttime="20210109 20:24:51.016" endtime="20210109 20:24:51.094"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:14.960" endtime="20210109 19:19:15.272"></status>
+<status status="PASS" starttime="20210109 20:24:51.094" endtime="20210109 20:24:51.414"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.272" endtime="20210109 19:19:15.272"></status>
+<status status="PASS" starttime="20210109 20:24:51.414" endtime="20210109 20:24:51.414"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.279" endtime="20210109 19:19:15.279"></status>
+<status status="PASS" starttime="20210109 20:24:51.421" endtime="20210109 20:24:51.421"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:14.872" endtime="20210109 19:19:15.279"></status>
+<status status="PASS" starttime="20210109 20:24:51.016" endtime="20210109 20:24:51.421"></status>
 </kw>
 <kw name="${i} = 12" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -452,31 +452,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:15.355" level="INFO">${dynamic_categ_name} = History &amp; Politics</msg>
-<status status="PASS" starttime="20210109 19:19:15.279" endtime="20210109 19:19:15.355"></status>
+<msg timestamp="20210109 20:24:51.498" level="INFO">${dynamic_categ_name} = History &amp; Politics</msg>
+<status status="PASS" starttime="20210109 20:24:51.421" endtime="20210109 20:24:51.498"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.355" endtime="20210109 19:19:15.685"></status>
+<status status="PASS" starttime="20210109 20:24:51.498" endtime="20210109 20:24:51.810"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.685" endtime="20210109 19:19:15.685"></status>
+<status status="PASS" starttime="20210109 20:24:51.810" endtime="20210109 20:24:51.810"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.691" endtime="20210109 19:19:15.691"></status>
+<status status="PASS" starttime="20210109 20:24:51.810" endtime="20210109 20:24:51.817"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:15.279" endtime="20210109 19:19:15.691"></status>
+<status status="PASS" starttime="20210109 20:24:51.421" endtime="20210109 20:24:51.817"></status>
 </kw>
 <kw name="${i} = 13" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -487,31 +487,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:15.759" level="INFO">${dynamic_categ_name} = Hobbies, Home &amp; Lifestyle</msg>
-<status status="PASS" starttime="20210109 19:19:15.691" endtime="20210109 19:19:15.759"></status>
+<msg timestamp="20210109 20:24:51.901" level="INFO">${dynamic_categ_name} = Hobbies, Home &amp; Lifestyle</msg>
+<status status="PASS" starttime="20210109 20:24:51.817" endtime="20210109 20:24:51.901"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:15.759" endtime="20210109 19:19:16.047"></status>
+<status status="PASS" starttime="20210109 20:24:51.901" endtime="20210109 20:24:52.217"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.047" endtime="20210109 19:19:16.047"></status>
+<status status="PASS" starttime="20210109 20:24:52.217" endtime="20210109 20:24:52.217"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.053" endtime="20210109 19:19:16.053"></status>
+<status status="PASS" starttime="20210109 20:24:52.222" endtime="20210109 20:24:52.222"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:15.691" endtime="20210109 19:19:16.053"></status>
+<status status="PASS" starttime="20210109 20:24:51.817" endtime="20210109 20:24:52.222"></status>
 </kw>
 <kw name="${i} = 14" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -522,31 +522,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:16.140" level="INFO">${dynamic_categ_name} = Indian Writing</msg>
-<status status="PASS" starttime="20210109 19:19:16.053" endtime="20210109 19:19:16.140"></status>
+<msg timestamp="20210109 20:24:52.301" level="INFO">${dynamic_categ_name} = Indian Writing</msg>
+<status status="PASS" starttime="20210109 20:24:52.222" endtime="20210109 20:24:52.301"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.140" endtime="20210109 19:19:16.460"></status>
+<status status="PASS" starttime="20210109 20:24:52.301" endtime="20210109 20:24:52.620"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.460" endtime="20210109 19:19:16.460"></status>
+<status status="PASS" starttime="20210109 20:24:52.620" endtime="20210109 20:24:52.620"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.466" endtime="20210109 19:19:16.466"></status>
+<status status="PASS" starttime="20210109 20:24:52.627" endtime="20210109 20:24:52.627"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:16.053" endtime="20210109 19:19:16.466"></status>
+<status status="PASS" starttime="20210109 20:24:52.222" endtime="20210109 20:24:52.627"></status>
 </kw>
 <kw name="${i} = 15" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -557,31 +557,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:16.545" level="INFO">${dynamic_categ_name} = Language &amp; Linguistics</msg>
-<status status="PASS" starttime="20210109 19:19:16.466" endtime="20210109 19:19:16.545"></status>
+<msg timestamp="20210109 20:24:52.706" level="INFO">${dynamic_categ_name} = Language &amp; Linguistics</msg>
+<status status="PASS" starttime="20210109 20:24:52.627" endtime="20210109 20:24:52.706"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.545" endtime="20210109 19:19:16.866"></status>
+<status status="PASS" starttime="20210109 20:24:52.706" endtime="20210109 20:24:53.042"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.866" endtime="20210109 19:19:16.866"></status>
+<status status="PASS" starttime="20210109 20:24:53.042" endtime="20210109 20:24:53.042"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.872" endtime="20210109 19:19:16.872"></status>
+<status status="PASS" starttime="20210109 20:24:53.042" endtime="20210109 20:24:53.049"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:16.466" endtime="20210109 19:19:16.872"></status>
+<status status="PASS" starttime="20210109 20:24:52.627" endtime="20210109 20:24:53.049"></status>
 </kw>
 <kw name="${i} = 16" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -592,31 +592,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:16.950" level="INFO">${dynamic_categ_name} = Literature &amp; Fiction</msg>
-<status status="PASS" starttime="20210109 19:19:16.872" endtime="20210109 19:19:16.950"></status>
+<msg timestamp="20210109 20:24:53.127" level="INFO">${dynamic_categ_name} = Literature &amp; Fiction</msg>
+<status status="PASS" starttime="20210109 20:24:53.049" endtime="20210109 20:24:53.127"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:16.950" endtime="20210109 19:19:17.269"></status>
+<status status="PASS" starttime="20210109 20:24:53.127" endtime="20210109 20:24:53.451"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.269" endtime="20210109 19:19:17.269"></status>
+<status status="PASS" starttime="20210109 20:24:53.451" endtime="20210109 20:24:53.451"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.275" endtime="20210109 19:19:17.275"></status>
+<status status="PASS" starttime="20210109 20:24:53.451" endtime="20210109 20:24:53.457"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:16.872" endtime="20210109 19:19:17.275"></status>
+<status status="PASS" starttime="20210109 20:24:53.049" endtime="20210109 20:24:53.457"></status>
 </kw>
 <kw name="${i} = 17" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -627,31 +627,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:17.348" level="INFO">${dynamic_categ_name} = Regional Books</msg>
-<status status="PASS" starttime="20210109 19:19:17.275" endtime="20210109 19:19:17.348"></status>
+<msg timestamp="20210109 20:24:53.547" level="INFO">${dynamic_categ_name} = Regional Books</msg>
+<status status="PASS" starttime="20210109 20:24:53.457" endtime="20210109 20:24:53.547"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.348" endtime="20210109 19:19:17.649"></status>
+<status status="PASS" starttime="20210109 20:24:53.547" endtime="20210109 20:24:53.870"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.649" endtime="20210109 19:19:17.649"></status>
+<status status="PASS" starttime="20210109 20:24:53.870" endtime="20210109 20:24:53.870"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.655" endtime="20210109 19:19:17.655"></status>
+<status status="PASS" starttime="20210109 20:24:53.876" endtime="20210109 20:24:53.876"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:17.275" endtime="20210109 19:19:17.655"></status>
+<status status="PASS" starttime="20210109 20:24:53.457" endtime="20210109 20:24:53.876"></status>
 </kw>
 <kw name="${i} = 18" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -662,31 +662,31 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:17.747" level="INFO">${dynamic_categ_name} = Religion, Philosophy &amp; Spirituality</msg>
-<status status="PASS" starttime="20210109 19:19:17.655" endtime="20210109 19:19:17.747"></status>
+<msg timestamp="20210109 20:24:53.958" level="INFO">${dynamic_categ_name} = Religion, Philosophy &amp; Spirituality</msg>
+<status status="PASS" starttime="20210109 20:24:53.876" endtime="20210109 20:24:53.958"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:17.747" endtime="20210109 19:19:18.061"></status>
+<status status="PASS" starttime="20210109 20:24:53.958" endtime="20210109 20:24:54.279"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:18.061" endtime="20210109 19:19:18.061"></status>
+<status status="PASS" starttime="20210109 20:24:54.279" endtime="20210109 20:24:54.279"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:18.067" endtime="20210109 19:19:18.067"></status>
+<status status="PASS" starttime="20210109 20:24:54.286" endtime="20210109 20:24:54.286"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:17.655" endtime="20210109 19:19:18.067"></status>
+<status status="PASS" starttime="20210109 20:24:53.876" endtime="20210109 20:24:54.286"></status>
 </kw>
 <kw name="${i} = 19" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -697,34 +697,34 @@ Without any arguments.</msg>
 <assign>
 <var>${dynamic_categ_name}</var>
 </assign>
-<msg timestamp="20210109 19:19:18.146" level="INFO">${dynamic_categ_name} = Science &amp; Technology</msg>
-<status status="PASS" starttime="20210109 19:19:18.067" endtime="20210109 19:19:18.146"></status>
+<msg timestamp="20210109 20:24:54.363" level="INFO">${dynamic_categ_name} = Science &amp; Technology</msg>
+<status status="PASS" starttime="20210109 20:24:54.286" endtime="20210109 20:24:54.363"></status>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <arguments>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:18.146" endtime="20210109 19:19:18.458"></status>
+<status status="PASS" starttime="20210109 20:24:54.363" endtime="20210109 20:24:54.654"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${dynamic_categ_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:18.458" endtime="20210109 19:19:18.458"></status>
+<status status="PASS" starttime="20210109 20:24:54.654" endtime="20210109 20:24:54.654"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${dynamic_categ_name}" == "${Expected_category}"</arg>
 </arguments>
-<msg timestamp="20210109 19:19:18.464" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210109 19:19:18.464" endtime="20210109 19:19:18.464"></status>
+<msg timestamp="20210109 20:24:54.660" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210109 20:24:54.660" endtime="20210109 20:24:54.660"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:18.067" endtime="20210109 19:19:18.464"></status>
+<status status="PASS" starttime="20210109 20:24:54.286" endtime="20210109 20:24:54.660"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:11.167" endtime="20210109 19:19:18.464"></status>
+<status status="PASS" starttime="20210109 20:24:47.066" endtime="20210109 20:24:54.660"></status>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -732,17 +732,17 @@ Without any arguments.</msg>
 <arg>${static_categ_name}</arg>
 <arg>xpath=//*[@id="leftNavContainer"]/ul/li[${i}]/a</arg>
 </arguments>
-<msg timestamp="20210109 19:19:18.469" level="INFO">${static_categ_name} = xpath=//*[@id="leftNavContainer"]/ul/li[19]/a</msg>
-<status status="PASS" starttime="20210109 19:19:18.464" endtime="20210109 19:19:18.469"></status>
+<msg timestamp="20210109 20:24:54.665" level="INFO">${static_categ_name} = xpath=//*[@id="leftNavContainer"]/ul/li[19]/a</msg>
+<status status="PASS" starttime="20210109 20:24:54.660" endtime="20210109 20:24:54.665"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 2</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:18.469" endtime="20210109 19:19:18.486"></status>
+<status status="PASS" starttime="20210109 20:24:54.665" endtime="20210109 20:24:54.685"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:08.096" endtime="20210109 19:19:18.491"></status>
+<status status="PASS" starttime="20210109 20:24:44.000" endtime="20210109 20:24:54.688"></status>
 </kw>
 <kw name="Click on &quot;Astronomy&quot; Sub Section" library="instructions">
 <kw name="Mouse Over" library="SeleniumLibrary">
@@ -750,32 +750,32 @@ Without any arguments.</msg>
 <arguments>
 <arg>${static_categ_name}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:18.494" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="leftNavContainer"]/ul/li[19]/a'.</msg>
-<status status="PASS" starttime="20210109 19:19:18.494" endtime="20210109 19:19:18.798"></status>
+<msg timestamp="20210109 20:24:54.691" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="leftNavContainer"]/ul/li[19]/a'.</msg>
+<status status="PASS" starttime="20210109 20:24:54.691" endtime="20210109 20:24:54.999"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:20.806" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:18.798" endtime="20210109 19:19:20.806"></status>
+<msg timestamp="20210109 20:24:57.002" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 20:24:54.999" endtime="20210109 20:24:57.002"></status>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
 <arguments>
 <arg>${Astronomy}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:20.806" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id='leftNavContainer']/ul/li[19]/ul/li[3]'.</msg>
-<status status="PASS" starttime="20210109 19:19:20.806" endtime="20210109 19:19:21.130"></status>
+<msg timestamp="20210109 20:24:57.002" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id='leftNavContainer']/ul/li[19]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20210109 20:24:57.002" endtime="20210109 20:24:57.327"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:24.144" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:21.130" endtime="20210109 19:19:24.144"></status>
+<msg timestamp="20210109 20:25:00.341" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210109 20:24:57.327" endtime="20210109 20:25:00.341"></status>
 </kw>
 <kw name="Verify WebPage title" library="instructions">
 <arguments>
@@ -786,32 +786,32 @@ Without any arguments.</msg>
 <arguments>
 <arg>${title_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:24.144" endtime="20210109 19:19:24.175"></status>
+<status status="PASS" starttime="20210109 20:25:00.341" endtime="20210109 20:25:00.373"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Pass!</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:24.175" endtime="20210109 19:19:24.175"></status>
+<status status="PASS" starttime="20210109 20:25:00.373" endtime="20210109 20:25:00.388"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:24.144" endtime="20210109 19:19:24.190"></status>
+<status status="PASS" starttime="20210109 20:25:00.341" endtime="20210109 20:25:00.390"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Astronomy}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:24.190" level="INFO">Clicking element 'xpath=//*[@id='leftNavContainer']/ul/li[19]/ul/li[3]'.</msg>
-<status status="PASS" starttime="20210109 19:19:24.190" endtime="20210109 19:19:28.298"></status>
+<msg timestamp="20210109 20:25:00.390" level="INFO">Clicking element 'xpath=//*[@id='leftNavContainer']/ul/li[19]/ul/li[3]'.</msg>
+<status status="PASS" starttime="20210109 20:25:00.390" endtime="20210109 20:25:10.058"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:30.312" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:28.298" endtime="20210109 19:19:30.312"></status>
+<msg timestamp="20210109 20:25:12.071" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 20:25:10.058" endtime="20210109 20:25:12.071"></status>
 </kw>
 <kw name="Verify WebPage title" library="instructions">
 <arguments>
@@ -822,25 +822,25 @@ Without any arguments.</msg>
 <arguments>
 <arg>${title_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.312" endtime="20210109 19:19:30.343"></status>
+<status status="PASS" starttime="20210109 20:25:12.071" endtime="20210109 20:25:12.118"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Pass!</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.343" endtime="20210109 19:19:30.343"></status>
+<status status="PASS" starttime="20210109 20:25:12.118" endtime="20210109 20:25:12.118"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.312" endtime="20210109 19:19:30.352"></status>
+<status status="PASS" starttime="20210109 20:25:12.071" endtime="20210109 20:25:12.123"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 3</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.352" endtime="20210109 19:19:30.352"></status>
+<status status="PASS" starttime="20210109 20:25:12.123" endtime="20210109 20:25:12.123"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:18.491" endtime="20210109 19:19:30.352"></status>
+<status status="PASS" starttime="20210109 20:24:54.688" endtime="20210109 20:25:12.123"></status>
 </kw>
 <kw name="Search for the book title 'Relativity: The Special and General Theory' in the Booklist" library="instructions">
 <kw name="Get Element Count" library="SeleniumLibrary">
@@ -851,8 +851,8 @@ Without any arguments.</msg>
 <assign>
 <var>${bok_list}</var>
 </assign>
-<msg timestamp="20210109 19:19:30.424" level="INFO">${bok_list} = 51</msg>
-<status status="PASS" starttime="20210109 19:19:30.357" endtime="20210109 19:19:30.424"></status>
+<msg timestamp="20210109 20:25:12.164" level="INFO">${bok_list} = 51</msg>
+<status status="PASS" starttime="20210109 20:25:12.123" endtime="20210109 20:25:12.164"></status>
 </kw>
 <kw name="${j} IN RANGE [ 2 | ${bok_list} ]" type="for">
 <kw name="${j} = 2" type="foritem">
@@ -864,17 +864,17 @@ Without any arguments.</msg>
 <assign>
 <var>${bok_names}</var>
 </assign>
-<msg timestamp="20210109 19:19:30.479" level="INFO">${bok_names} = Death by Black Hole: And Other...</msg>
-<status status="PASS" starttime="20210109 19:19:30.428" endtime="20210109 19:19:30.479"></status>
+<msg timestamp="20210109 20:25:12.217" level="INFO">${bok_names} = Death by Black Hole: And Other...</msg>
+<status status="PASS" starttime="20210109 20:25:12.168" endtime="20210109 20:25:12.217"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${bok_names}" == "${Expected_Book_Name}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.479" endtime="20210109 19:19:30.479"></status>
+<status status="PASS" starttime="20210109 20:25:12.217" endtime="20210109 20:25:12.217"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.424" endtime="20210109 19:19:30.479"></status>
+<status status="PASS" starttime="20210109 20:25:12.168" endtime="20210109 20:25:12.217"></status>
 </kw>
 <kw name="${j} = 3" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -885,17 +885,17 @@ Without any arguments.</msg>
 <assign>
 <var>${bok_names}</var>
 </assign>
-<msg timestamp="20210109 19:19:30.542" level="INFO">${bok_names} = The Theory of Everything: The ...</msg>
-<status status="PASS" starttime="20210109 19:19:30.479" endtime="20210109 19:19:30.542"></status>
+<msg timestamp="20210109 20:25:12.279" level="INFO">${bok_names} = The Theory of Everything: The ...</msg>
+<status status="PASS" starttime="20210109 20:25:12.217" endtime="20210109 20:25:12.279"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${bok_names}" == "${Expected_Book_Name}"</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.542" endtime="20210109 19:19:30.542"></status>
+<status status="PASS" starttime="20210109 20:25:12.279" endtime="20210109 20:25:12.279"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.479" endtime="20210109 19:19:30.542"></status>
+<status status="PASS" starttime="20210109 20:25:12.217" endtime="20210109 20:25:12.279"></status>
 </kw>
 <kw name="${j} = 4" type="foritem">
 <kw name="Get Text" library="SeleniumLibrary">
@@ -906,20 +906,20 @@ Without any arguments.</msg>
 <assign>
 <var>${bok_names}</var>
 </assign>
-<msg timestamp="20210109 19:19:30.604" level="INFO">${bok_names} = Relativity: The Special and Ge...</msg>
-<status status="PASS" starttime="20210109 19:19:30.542" endtime="20210109 19:19:30.604"></status>
+<msg timestamp="20210109 20:25:12.342" level="INFO">${bok_names} = Relativity: The Special and Ge...</msg>
+<status status="PASS" starttime="20210109 20:25:12.279" endtime="20210109 20:25:12.342"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>"${bok_names}" == "${Expected_Book_Name}"</arg>
 </arguments>
-<msg timestamp="20210109 19:19:30.620" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210109 19:19:30.604" endtime="20210109 19:19:30.620"></status>
+<msg timestamp="20210109 20:25:12.342" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210109 20:25:12.342" endtime="20210109 20:25:12.342"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.542" endtime="20210109 19:19:30.620"></status>
+<status status="PASS" starttime="20210109 20:25:12.279" endtime="20210109 20:25:12.342"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.424" endtime="20210109 19:19:30.620"></status>
+<status status="PASS" starttime="20210109 20:25:12.168" endtime="20210109 20:25:12.342"></status>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
@@ -927,17 +927,17 @@ Without any arguments.</msg>
 <arg>${exact_bok_elem}</arg>
 <arg>xpath=//div[@class='col-md-9']/div[${j}]/a/div[3]</arg>
 </arguments>
-<msg timestamp="20210109 19:19:30.620" level="INFO">${exact_bok_elem} = xpath=//div[@class='col-md-9']/div[4]/a/div[3]</msg>
-<status status="PASS" starttime="20210109 19:19:30.620" endtime="20210109 19:19:30.620"></status>
+<msg timestamp="20210109 20:25:12.358" level="INFO">${exact_bok_elem} = xpath=//div[@class='col-md-9']/div[4]/a/div[3]</msg>
+<status status="PASS" starttime="20210109 20:25:12.342" endtime="20210109 20:25:12.358"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 4</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:30.620" endtime="20210109 19:19:30.620"></status>
+<status status="PASS" starttime="20210109 20:25:12.358" endtime="20210109 20:25:12.358"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.357" endtime="20210109 19:19:30.627"></status>
+<status status="PASS" starttime="20210109 20:25:12.123" endtime="20210109 20:25:12.358"></status>
 </kw>
 <kw name="Go to Expected Book details Page" library="instructions">
 <kw name="Sleep" library="BuiltIn">
@@ -945,25 +945,25 @@ Without any arguments.</msg>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:34.639" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:30.627" endtime="20210109 19:19:34.639"></status>
+<msg timestamp="20210109 20:25:16.369" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210109 20:25:12.358" endtime="20210109 20:25:16.369"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${exact_bok_elem}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:34.639" level="INFO">Clicking element 'xpath=//div[@class='col-md-9']/div[4]/a/div[3]'.</msg>
-<status status="PASS" starttime="20210109 19:19:34.639" endtime="20210109 19:19:49.076"></status>
+<msg timestamp="20210109 20:25:16.369" level="INFO">Clicking element 'xpath=//div[@class='col-md-9']/div[4]/a/div[3]'.</msg>
+<status status="PASS" starttime="20210109 20:25:16.369" endtime="20210109 20:25:46.213"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step5</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:49.076" endtime="20210109 19:19:49.076"></status>
+<status status="PASS" starttime="20210109 20:25:46.221" endtime="20210109 20:25:46.221"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:30.627" endtime="20210109 19:19:49.082"></status>
+<status status="PASS" starttime="20210109 20:25:12.358" endtime="20210109 20:25:46.225"></status>
 </kw>
 <kw name="Verify User navigated to the expected book details" library="instructions">
 <kw name="Verify WebPage title" library="instructions">
@@ -975,25 +975,25 @@ Without any arguments.</msg>
 <arguments>
 <arg>${title_name}</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:49.082" endtime="20210109 19:19:49.115"></status>
+<status status="PASS" starttime="20210109 20:25:46.229" endtime="20210109 20:25:46.294"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Pass!</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:49.115" endtime="20210109 19:19:49.123"></status>
+<status status="PASS" starttime="20210109 20:25:46.294" endtime="20210109 20:25:46.298"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:49.082" endtime="20210109 19:19:49.123"></status>
+<status status="PASS" starttime="20210109 20:25:46.225" endtime="20210109 20:25:46.298"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 6</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:49.123" endtime="20210109 19:19:49.127"></status>
+<status status="PASS" starttime="20210109 20:25:46.302" endtime="20210109 20:25:46.318"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:49.082" endtime="20210109 19:19:49.127"></status>
+<status status="PASS" starttime="20210109 20:25:46.225" endtime="20210109 20:25:46.318"></status>
 </kw>
 <kw name="Click on @Flipkart to buy the book" library="instructions">
 <kw name="Sleep" library="BuiltIn">
@@ -1001,33 +1001,33 @@ Without any arguments.</msg>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:51.138" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:49.131" endtime="20210109 19:19:51.138"></status>
+<msg timestamp="20210109 20:25:48.322" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 20:25:46.322" endtime="20210109 20:25:48.322"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Flipkart_elem}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:51.138" level="INFO">Clicking element 'xpath=//div/a[@title='Buy Relativity: The Special and General Theory... from Flipkart']'.</msg>
-<status status="PASS" starttime="20210109 19:19:51.138" endtime="20210109 19:19:51.384"></status>
+<msg timestamp="20210109 20:25:48.322" level="INFO">Clicking element 'xpath=//div/a[@title='Buy Relativity: The Special and General Theory... from Flipkart']'.</msg>
+<status status="PASS" starttime="20210109 20:25:48.322" endtime="20210109 20:25:48.581"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210109 19:19:53.388" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210109 19:19:51.384" endtime="20210109 19:19:53.388"></status>
+<msg timestamp="20210109 20:25:50.591" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 20:25:48.589" endtime="20210109 20:25:50.591"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 7</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:53.388" endtime="20210109 19:19:53.388"></status>
+<status status="PASS" starttime="20210109 20:25:50.591" endtime="20210109 20:25:50.591"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:49.127" endtime="20210109 19:19:53.391"></status>
+<status status="PASS" starttime="20210109 20:25:46.318" endtime="20210109 20:25:50.595"></status>
 </kw>
 <kw name="Click on the Book" library="instructions">
 <kw name="Switch Window" library="SeleniumLibrary">
@@ -1035,32 +1035,40 @@ Without any arguments.</msg>
 <arguments>
 <arg>NEW</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:19:53.391" endtime="20210109 19:19:53.435"></status>
+<status status="PASS" starttime="20210109 20:25:50.595" endtime="20210109 20:25:50.640"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210109 20:25:52.644" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 20:25:50.640" endtime="20210109 20:25:52.644"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Book}</arg>
 </arguments>
-<msg timestamp="20210109 19:19:53.439" level="INFO">Clicking element 'xpath=//a[@title='Relativity']'.</msg>
-<status status="PASS" starttime="20210109 19:19:53.435" endtime="20210109 19:20:01.997"></status>
+<msg timestamp="20210109 20:25:52.644" level="INFO">Clicking element 'xpath=//div/a[@title='Relativity']'.</msg>
+<status status="PASS" starttime="20210109 20:25:52.644" endtime="20210109 20:26:17.008"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>D:/VS_Code_Moolya/RobotFramework/ScreenShots/flipkartPage.png</arg>
 </arguments>
-<msg timestamp="20210109 19:20:02.589" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/flipkartPage.png"&gt;&lt;img src="../ScreenShots/flipkartPage.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210109 19:20:01.997" endtime="20210109 19:20:02.589"></status>
+<msg timestamp="20210109 20:26:17.500" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/flipkartPage.png"&gt;&lt;img src="../ScreenShots/flipkartPage.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210109 20:26:17.008" endtime="20210109 20:26:17.500"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 8</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:20:02.589" endtime="20210109 19:20:02.589"></status>
+<status status="PASS" starttime="20210109 20:26:17.500" endtime="20210109 20:26:17.500"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:19:53.391" endtime="20210109 19:20:02.591"></status>
+<status status="PASS" starttime="20210109 20:25:50.595" endtime="20210109 20:26:17.505"></status>
 </kw>
 <kw name="Add to cart" library="instructions">
 <kw name="Switch Window" library="SeleniumLibrary">
@@ -1068,49 +1076,57 @@ Without any arguments.</msg>
 <arguments>
 <arg>NEW</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:20:02.591" endtime="20210109 19:20:02.640"></status>
+<status status="PASS" starttime="20210109 20:26:17.505" endtime="20210109 20:26:17.533"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Cart}</arg>
 </arguments>
-<msg timestamp="20210109 19:20:02.640" level="INFO">Clicking element 'xpath=//button[@class='_2KpZ6l _2U9uOA _3v1-ww']'.</msg>
-<status status="PASS" starttime="20210109 19:20:02.640" endtime="20210109 19:20:05.750"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>4s</arg>
-</arguments>
-<msg timestamp="20210109 19:20:09.756" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20210109 19:20:05.750" endtime="20210109 19:20:09.756"></status>
+<msg timestamp="20210109 20:26:17.533" level="INFO">Clicking element 'xpath=//button[@class='_2KpZ6l _2U9uOA _3v1-ww']'.</msg>
+<status status="PASS" starttime="20210109 20:26:17.533" endtime="20210109 20:26:28.705"></status>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
 <arguments>
 <arg>D:/VS_Code_Moolya/RobotFramework/ScreenShots/addToCart.png</arg>
 </arguments>
-<msg timestamp="20210109 19:20:10.188" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/addToCart.png"&gt;&lt;img src="../ScreenShots/addToCart.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210109 19:20:09.756" endtime="20210109 19:20:10.188"></status>
+<msg timestamp="20210109 20:26:29.381" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/addToCart.png"&gt;&lt;img src="../ScreenShots/addToCart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210109 20:26:28.713" endtime="20210109 20:26:29.381"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210109 20:26:33.395" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210109 20:26:29.381" endtime="20210109 20:26:33.395"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>D:/VS_Code_Moolya/RobotFramework/ScreenShots/myCart.png</arg>
+</arguments>
+<msg timestamp="20210109 20:26:33.800" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../ScreenShots/myCart.png"&gt;&lt;img src="../ScreenShots/myCart.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210109 20:26:33.395" endtime="20210109 20:26:33.800"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>Step 9</arg>
 </arguments>
-<status status="PASS" starttime="20210109 19:20:10.188" endtime="20210109 19:20:10.188"></status>
+<status status="PASS" starttime="20210109 20:26:33.800" endtime="20210109 20:26:33.800"></status>
 </kw>
-<status status="PASS" starttime="20210109 19:20:02.591" endtime="20210109 19:20:10.193"></status>
+<status status="PASS" starttime="20210109 20:26:17.505" endtime="20210109 20:26:33.816"></status>
 </kw>
 <tags>
 <tag>sanity</tag>
 </tags>
-<status status="PASS" starttime="20210109 19:18:48.937" endtime="20210109 19:20:10.193" critical="yes"></status>
+<status status="PASS" starttime="20210109 20:24:16.403" endtime="20210109 20:26:33.816" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210109 19:18:48.363" endtime="20210109 19:20:10.201"></status>
+<status status="PASS" starttime="20210109 20:24:16.014" endtime="20210109 20:26:33.824"></status>
 </suite>
-<status status="PASS" starttime="20210109 19:18:48.284" endtime="20210109 19:20:10.205"></status>
+<status status="PASS" starttime="20210109 20:24:15.926" endtime="20210109 20:26:33.828"></status>
 </suite>
 <statistics>
 <total>

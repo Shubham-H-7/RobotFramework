@@ -59,6 +59,7 @@ Click on @Flipkart to buy the book
 
 Click on the Book
     Switch Window  NEW
+    sleep  2s
     Click Element  ${Book}
     capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/flipkartPage.png 
     Log to Console  Step 8
@@ -66,12 +67,12 @@ Click on the Book
 Add to cart
     Switch Window  NEW
     Click Element  ${Cart}
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/addToCart.png 
     sleep  4s
-    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/addToCart.png
+    capture page screenshot  D:/VS_Code_Moolya/RobotFramework/ScreenShots/myCart.png
     Log to Console  Step 9
 
 Verify WebPage title
     [Arguments]  ${title_name}
     Wait Until Page Contains  ${title_name}
     Log to Console  Pass!
-    
